@@ -3,7 +3,7 @@
     "license": "LGPL-3",
    'depends': ['base'],
    'application': True,
-   'data': ['views/patients.xml','views/menu.xml']
+   'data': ['security/ir.model.access.csv','views/patients.xml','views/menu.xml']
 
 } # type: ignore
 
