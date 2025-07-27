@@ -6,6 +6,7 @@
    'data': [
             'views/patients_readonly.xml',
             'security/ir.model.access.csv',
+            'data/sequence.xml',
             'views/patients.xml',
             'views/appointments.xml',
             'views/menu.xml',

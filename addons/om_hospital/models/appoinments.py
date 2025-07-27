@@ -6,6 +6,7 @@ class HospitalAppointment(models.Model):
     _description='Hospital Appointment'
     _rec_name='patient_id'
     
+    reference=fields.Char(string="Reference",default='New')
     patient_id=fields.Many2one('hospital.patients',string="Patient")
     data_appointment=fields.Date(string="Date")
     note=fields.Text(string="Note")
