@@ -7,6 +7,7 @@
             'views/patients_readonly.xml',
             'security/ir.model.access.csv',
             'views/patients.xml',
+            'views/appointments.xml',
             'views/menu.xml',
             ]
 
