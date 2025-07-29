@@ -10,3 +10,10 @@ class HospitalAppointment(models.Model):
     patient_id=fields.Many2one('hospital.patients',string="Patient")
     data_appointment=fields.Date(string="Date")
     note=fields.Text(string="Note")
+    
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if not vals.get('reference') or vals['reference'] == 'New':
+                vals['reference'] = self.env['ir.sequence'].next_by_code('hospital.appointment') 
+        return super().create(vals_list)
