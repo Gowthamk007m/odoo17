@@ -7,5 +7,4 @@ class Patients(Model):
     
     name = fields.Char(required=True ,tracking=True)
     age = fields.Integer(tracking=True)
-    
     gender = fields.Selection([('male', 'Male'), ('female', 'Female')],tracking=True)
