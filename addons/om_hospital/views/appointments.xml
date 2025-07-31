@@ -18,6 +18,13 @@
       <field name="model">hospital.appointment</field>
       <field name="arch" type='xml'>   
             <form string="appointment">
+            <header>
+               <button name ="action_confirm" type="object" string="Confirm" />
+               <button name ="action_ongoing" type="object" string="Ongoing" />
+               <button name ="action_done" type="object" string="Done" />
+               <button name ="action_cancel" type="object" string="Cancel" />
+               <field name="state" widget="statusbar"/>
+            </header>
       <sheet>
       <group>
          <group>
