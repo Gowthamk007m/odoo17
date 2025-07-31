@@ -19,11 +19,11 @@
       <field name="arch" type='xml'>   
             <form string="appointment">
             <header>
-               <button name ="action_confirm" type="object" string="Confirm" />
-               <button name ="action_ongoing" type="object" string="Ongoing" />
-               <button name ="action_done" type="object" string="Done" />
-               <button name ="action_cancel" type="object" string="Cancel" />
-               <field name="state" widget="statusbar"/>
+               <button name ="action_confirm" type="object" string="Confirm" invisible="state != 'draft'" class="oe_highlight" />
+               <button name ="action_ongoing" type="object" string="Ongoing" invisible="state != 'confirm'" />
+               <button name ="action_done" type="object" string="Done" invisible="state != 'ongoing'"/>
+               <button name ="action_cancel" type="object" string="Cancel" invisible="state == 'done'"/>
+               <field name="state" widget="statusbar" statusbar_visible="draft,confirm,ongoing,done"/>
             </header>
       <sheet>
       <group>
