@@ -1,6 +1,7 @@
 {
     'name': 'Hospital',
     "license": "LGPL-3",
+    "category": "Administration",
    'depends': ['base','mail'],
    'application': True,
    'data': [

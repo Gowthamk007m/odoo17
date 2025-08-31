@@ -13,8 +13,6 @@
       </field>
    </record>
 
-
-
    <record id="view_hospital_patients_readonly_form" model="ir.ui.view">
       <field name="name">hospital.patients.readonly.form</field>
       <field name="model">hospital.patients</field>
