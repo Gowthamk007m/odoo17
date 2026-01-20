@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
 
-
     <record id="view_hospital_patient_form" model="ir.ui.view">
         <field name="name">hospital.patient.form</field>
         <field name="model">hospital.patient</field>
@@ -32,7 +31,6 @@
         </field>
     </record>
 
-
     <record id="action_hospital_patient" model="ir.actions.act_window">
         <field name="name">Patients</field>
         <field name="type">ir.actions.act_window</field>
@@ -41,8 +39,8 @@
     </record>
 
     <menuitem id="menu_patients"
-              parent="menu_hospital_operations"
               name="Patients"
+              parent="menu_hospital_operations"
               action="action_hospital_patient"
               sequence="10"/>
 </odoo>
